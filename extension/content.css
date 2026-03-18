@@ -1,0 +1,132 @@
+.mypwd-autofill-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  background: rgba(99, 102, 241, 0.1);
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.mypwd-autofill-btn:hover {
+  background: rgba(99, 102, 241, 0.2);
+  transform: scale(1.1);
+}
+
+.mypwd-dropdown {
+  background: #1e1e2e;
+  border: 1px solid #363650;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  min-width: 280px;
+  max-width: 360px;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.mypwd-dropdown-header {
+  padding: 12px 16px;
+  background: #2a2a3e;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e2e8f0;
+  border-bottom: 1px solid #363650;
+}
+
+.mypwd-dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #2a2a3e;
+}
+
+.mypwd-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.mypwd-dropdown-item:hover {
+  background: #2a2a3e;
+}
+
+.mypwd-dropdown-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin-bottom: 2px;
+}
+
+.mypwd-dropdown-username {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.mypwd-dropdown-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.mypwd-action-btn {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.mypwd-action-fill {
+  background: #6366f1;
+  color: white;
+}
+
+.mypwd-action-fill:hover {
+  background: #4f46e5;
+}
+
+.mypwd-action-copy {
+  background: #363650;
+  color: #e2e8f0;
+}
+
+.mypwd-action-copy:hover {
+  background: #4a4a6a;
+}
+
+.mypwd-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #6366f1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  z-index: 2147483647;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+  animation: mypwd-slide-in 0.3s ease-out;
+}
+
+.mypwd-notification-hide {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+
+@keyframes mypwd-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
