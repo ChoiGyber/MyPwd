@@ -33,7 +33,9 @@ pub enum DuplicateStatus {
 }
 
 #[tauri::command]
-pub fn import_csv(content: String) -> Result<(String, Vec<ImportedCredential>), String> {
+pub fn import_csv(file_path: String) -> Result<(String, Vec<ImportedCredential>), String> {
+    let content = std::fs::read_to_string(&file_path)
+        .map_err(|e| format!("Failed to read file: {}", e))?;
     csv_import::parse_csv(&content)
 }
 

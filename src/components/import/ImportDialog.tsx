@@ -32,6 +32,15 @@ const browserGuides = {
       ],
     },
     {
+      name: "Naver Whale",
+      icon: "🟢",
+      steps: [
+        "Whale 열기 → 주소창에 whale://settings/passwords 입력",
+        "'비밀번호 내보내기' 클릭 (⋯ 메뉴)",
+        "Windows 비밀번호 입력 후 CSV 파일 저장",
+      ],
+    },
+    {
       name: "Firefox",
       icon: "🟠",
       steps: [
@@ -57,6 +66,15 @@ const browserGuides = {
       steps: [
         "Open Edge → Type edge://wallet/passwords in address bar",
         "⋯ Menu → Click 'Export passwords'",
+        "Enter Windows password and save CSV file",
+      ],
+    },
+    {
+      name: "Naver Whale",
+      icon: "🟢",
+      steps: [
+        "Open Whale → Type whale://settings/passwords in address bar",
+        "Click 'Export passwords' (⋯ Menu)",
         "Enter Windows password and save CSV file",
       ],
     },

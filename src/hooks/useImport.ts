@@ -29,7 +29,7 @@ export function useImport() {
     try {
       setIsLoading(true);
       setError(null);
-      const items = await invoke<ImportedCredential[]>("import_csv", { filePath });
+      const [, items] = await invoke<[string, ImportedCredential[]]>("import_csv", { filePath });
       setImportedItems(items);
       setImportStep("preview");
     } catch (err) {

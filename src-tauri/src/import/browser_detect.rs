@@ -22,6 +22,7 @@ pub fn detect_installed_browsers() -> Vec<BrowserInfo> {
                 ("Google Chrome", "Google/Chrome/User Data/Default", "chromium"),
                 ("Microsoft Edge", "Microsoft/Edge/User Data/Default", "chromium"),
                 ("Brave Browser", "BraveSoftware/Brave-Browser/User Data/Default", "chromium"),
+                ("Naver Whale", "Naver/Naver Whale/User Data/Default", "chromium"),
             ];
 
             for (name, rel_path, browser_type) in browser_paths {
